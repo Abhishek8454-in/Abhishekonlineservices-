@@ -1,1 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Online Services</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+<style>
+
+/* यहाँ पूरा CSS पेस्ट करना है */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+header{
+background:#0d6efd;
+color:#fff;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+background:linear-gradient(135deg,#0d6efd,#00b4d8);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.main-btn{
+background:white;
+color:#0d6efd;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.search-area{
+padding:20px;
+text-align:center;
+}
+
+.search-area input{
+width:90%;
+max-width:600px;
+padding:15px;
+border:2px solid #0d6efd;
+border-radius:10px;
+font-size:16px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#0d6efd;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:18px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.card button{
+background:#198754;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.card button:hover{
+background:#157347;
+}
+
+.contact{
+background:white;
+padding:50px 20px;
+text-align:center;
+margin-top:30px;
+}
+
+.contact h2{
+color:#0d6efd;
+margin-bottom:15px;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.logo h1{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+}
+
+</style>
+<header>
+
+<div class="logo">
+    <h1>Abhishek Online Services</h1>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Welcome To Abhishek Online Services</h2>
+
+<p>
+PAN Card, Income Certificate, Caste Certificate,
+Domicile Certificate, Recharge, Bill Payment,
+Train Ticket Booking and More.
+</p>
+
+<a href="#services">
+<button class="main-btn">
+View Services
+</button>
+</a>
+
+</section>
+
+<section class="search-area">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Service Here...">
+
+</section>
+
+<section class="services" id="services">
+
+<div class="card">
+<h3>PAN Card Apply</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+<div class="card">
+<h3>Character Certificate</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>E-Shram Card</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Labour Card</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Ration Card Apply</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Ration Card Correction</h3>
+<p>Service Charge ₹120</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>PM Kisan Registration</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Farmer Registration</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Marriage Certificate</h3>
+<p>Service Charge ₹200</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Property ID Registration</h3>
+<p>Service Charge ₹250</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Digital Signature Certificate</h3>
+<p>Service Charge ₹999</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Trademark Registration</h3>
+<p>Service Charge ₹1499</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Website Design Service</h3>
+<p>Service Charge ₹999</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Logo Design</h3>
+<p>Service Charge ₹299</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Visiting Card Design</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Social Media Promotion</h3>
+<p>Service Charge ₹499</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>PDF Editing</h3>
+<p>Service Charge ₹99</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Photo Editing</h3>
+<p>Service Charge ₹99</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Document Scanning</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+<div class="card">
+<h3>NREGA Job Card</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Pension Apply</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Widow Pension</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Old Age Pension</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Disability Pension</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>UP Scholarship</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>College Admission Form</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>University Registration</h3>
+<p>Service Charge ₹200</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Exam Form Fill Up</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Online Result Download</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Aadhaar PVC Order Assistance</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Bank Account Opening Assistance</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Insurance Renewal</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Health Insurance Assistance</h3>
+<p>Service Charge ₹250</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Life Insurance Assistance</h3>
+<p>Service Charge ₹250</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Google Business Profile Setup</h3>
+<p>Service Charge ₹499</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Digital Marketing Service</h3>
+<p>Service Charge ₹999</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>YouTube Channel Setup</h3>
+<p>Service Charge ₹299</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Passport Renewal Assistance</h3>
+<p>Service Charge ₹300</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Marriage Biodata Design</h3>
+<p>Service Charge ₹99</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Affidavit Drafting Assistance</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Rent Agreement Draft</h3>
+<p>Service Charge ₹299</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Resume & CV Writing</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Cover Letter Writing</h3>
+<p>Service Charge ₹99</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Typing Work (English)</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Typing Work (Hindi)</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>PDF to Word Conversion</h3>
+<p>Service Charge ₹49</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Word to PDF Conversion</h3>
+<p>Service Charge ₹49</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Photo Resize Service</h3>
+<p>Service Charge ₹30</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Passport Photo Creation</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Online Complaint Filing Assistance</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Electricity New Connection Assistance</h3>
+<p>Service Charge ₹250</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Water Connection Assistance</h3>
+<p>Service Charge ₹250</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Internet Bill Payment</h3>
+<p>Service Charge ₹20</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Gas Booking Assistance</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Online Consultation Booking</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Website Maintenance</h3>
+<p>Service Charge ₹499</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+
+<div class="card">
+<h3>Domain & Hosting Assistance</h3>
+<p>Service Charge ₹299</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke"><button>Pay Now</button></a>
+</div>
+<div class="card">
+<h3>Aadhaar Address Update</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Aadhaar Mobile Number Update</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Aadhaar Husband Name Update</h3>
+<p>Service Charge ₹199</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+<div class="card">
+<h3>PAN Card Correction</h3>
+<p>Service Charge ₹200</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Income Certificate</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Caste Certificate</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Domicile Certificate</h3>
+<p>Service Charge ₹120</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Birth Certificate</h3>
+<p>Service Charge ₹120</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Death Certificate</h3>
+<p>Service Charge ₹120</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Voter ID Apply</h3>
+<p>Service Charge ₹80</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Voter ID Correction</h3>
+<p>Service Charge ₹100</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Passport Apply</h3>
+<p>Service Charge ₹300</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Train Ticket Booking</h3>
+<p>Service Charge ₹50</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Flight Ticket Booking</h3>
+<p>Service Charge ₹150</p>
+<a href="https://razorpay.me/@abhishekdigitalmarke">
+<button>Pay Now</button>
+</a>
+</div>
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+Abhishek Online Services
+</p>
+
+<p>
+WhatsApp Support Available 24x7
+</p>
+
+<p>
+Email: support@abhishekonlineservices.in
+</p>
+
+</section>
+
+<a
+href="https://wa.me/918454013314"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+const searchInput =
+document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter =
+searchInput.value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let text =
+card.innerText.toLowerCase();
+
+if(text.includes(filter)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+<footer>
+
+<h3>Abhishek Online Services</h3>
+
+<p>
+PAN Card | Certificates | Ticket Booking |
+Recharge | Bill Payment | Online Forms
+</p>
+
+<p>
+© 2026 Abhishek Online Services
+All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+  </html>
